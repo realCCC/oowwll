@@ -11,10 +11,16 @@ public class MemoryMemberRepository implements MemberRepository{
     private static long sequence = 0L;
     @Override
     public Member save(Member member) { //Member.java에서 가져온 정보 save하는 함수
-        member.setId(++sequence);
-        store.put(member.getId(), member);
+        member.setId(++sequence); //id 세팅
+        store.put(member.getId(), member); //store에 저장
         return member;
     }
+    //사용자가 회원가입을 하면 store에 담겨 저장
+    //id는 자동으로 증가하는 sequence로 설정
+    //id는 setter로 설정 // 담을때는 put으로 map에 담아줌
+
+
+
 
     @Override
     public Optional<Member> findById(Long id) {
@@ -28,6 +34,8 @@ public class MemoryMemberRepository implements MemberRepository{
                 .findAny();
 
     }
+
+
 
     @Override
     public List<Member> findAll() {
