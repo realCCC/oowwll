@@ -13,3 +13,6 @@ spring:
     show-sql: true
     properties:
       hibernate.format_sql: true
+  thymeleaf:
+    cache: false
+# thymeleaf 파일 수정하고 저장한 후 브라우저에서 변경된 결과 확인하기 위한 설정 /// 개발할때는 false로두고 나중에 true로 변경

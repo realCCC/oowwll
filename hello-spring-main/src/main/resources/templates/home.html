@@ -28,9 +28,10 @@
             defer
     ></script>
 
-
 </head>
+
 <body>
+<!--header-->
 <header role="banner">
     <div id="cd-logo"><a href="#0"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_1.svg" alt="Logo"></a></div>
 
@@ -43,6 +44,7 @@
     </nav>
 </header>
 
+<!--팝업 로그인 창-->
 <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
     <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
         <ul class="cd-switcher">
@@ -134,20 +136,18 @@
     </div> <!-- cd-user-modal-container -->
 </div> <!-- cd-user-modal -->
 
-
-
-
+<!--main--->
 <div class="d-flex" id="wrapper">
     <!-- Sidebar-->
     <div class="border-end bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+        <div class="sidebar-heading border-bottom bg-light">Owl restaurant</div>
         <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">기능1</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">기능2</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">기능3</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">기능4</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">기능5</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">기능6</a>
         </div>
     </div>
     <!-- Page content wrapper-->
@@ -164,8 +164,6 @@
 
                         <!--           회원가입기능              -->
 
-
-
                         <li class="nav-item active"><a class="nav-link" href="/members/new">회원가입</a></li>
                         <li class="nav-item"><a class="nav-link" href="/members">회원 목록</a></li>
                         <li class="nav-item dropdown">
@@ -181,12 +179,17 @@
                 </div>
             </div>
         </nav>
-        <!-- Page content-->
+
+        <!-- 맵 표시 map -->
         <div class="part1" th:replace="~{/fragments/fragment1 :: part1}">
         </div>
 
     </div>
 </div>
 
+
+<footer>
+<!--    내용 꼭 넣으셈    -->
+</footer>
 </body>
 </html>

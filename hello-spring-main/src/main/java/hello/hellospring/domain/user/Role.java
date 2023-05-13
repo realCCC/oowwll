@@ -1,4 +1,4 @@
-package hello.hellospring.domain;
+package hello.hellospring.domain.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
